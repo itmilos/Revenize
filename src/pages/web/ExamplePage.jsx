@@ -80,8 +80,6 @@ const ExamplePage = () => {
             {page === 5 && <Section
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
             >
                 <Heading type='small'>V - Optimize operations</Heading>
                 <ul>
