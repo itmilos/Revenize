@@ -61,7 +61,12 @@ const ServicesPage = ({ withMargin }) =>
             color: '#17488b',
             fontFamily: '"Source Sans Pro", sans-serif',
             fontSize: '16px',
-            margin: '15px'
+            margin: '15px',
+            backgroundImage: 'url("data:image/svg+xml;charset=utf8,%3Csvg data-cssscan-pro-pattern-index=\'47\' data-cssscan-pro-pattern-opacity=\'2\' data-cssscan-pro-pattern-size=\'6px\' data-cssscan-pro-pattern-back-color=\'rgba(255%2C%20255%2C%20255%2C%200)\' data-cssscan-pro-pattern-front-color=\'%23000000\' xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\'%3E%3Cdefs%3E%3Cpattern id=\'p\' width=\'100\' height=\'100\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(0.3)\'%3E%3Cpath data-color=\'outline\' fill=\'none\' stroke=\'%23000000\' stroke-width=\'5\' stroke-opacity=\'0.02\' d=\'M0 0h100v50H0zM-50 50h100v50h-100zM50 50h100v50h-100z\'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23p)\' width=\'100%25\' height=\'100%25\'%3E%3C/rect%3E%3C/svg%3E")',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+
         }}>
             <li>Store Setup</li>
             <li>Amazon Search Engine Optimization</li>
@@ -79,7 +84,11 @@ const ServicesPage = ({ withMargin }) =>
             color: '#17488b',
             fontFamily: '"Source Sans Pro", sans-serif',
             fontSize: '16px',
-            margin: '15px'
+            margin: '15px',
+            backgroundImage: 'url("data:image/svg+xml;charset=utf8,%3Csvg data-cssscan-pro-pattern-index=\'47\' data-cssscan-pro-pattern-opacity=\'2\' data-cssscan-pro-pattern-size=\'6px\' data-cssscan-pro-pattern-back-color=\'rgba(255%2C%20255%2C%20255%2C%200)\' data-cssscan-pro-pattern-front-color=\'%23000000\' xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\'%3E%3Cdefs%3E%3Cpattern id=\'p\' width=\'100\' height=\'100\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(0.3)\'%3E%3Cpath data-color=\'outline\' fill=\'none\' stroke=\'%23000000\' stroke-width=\'5\' stroke-opacity=\'0.02\' d=\'M0 0h100v50H0zM-50 50h100v50h-100zM50 50h100v50h-100z\'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23p)\' width=\'100%25\' height=\'100%25\'%3E%3C/rect%3E%3C/svg%3E")',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
 
         }}>
             <li>Seller Central</li>
