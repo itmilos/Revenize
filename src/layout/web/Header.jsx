@@ -3,16 +3,21 @@ import styled, { keyframes } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import phantom from '../../assets/phantom.svg'
+import {isMobile} from "react-device-detect";
+import MobileHomePage from "../../pages/mobile/MobileHomePage";
 
 const Header = () => {
 
     return <StyledHeader>
         <h3 style={{float:'left',padding: '15px'}}>Revenize</h3>
         <Navigation>
-            <StyledLink to='/'>Home</StyledLink>
-            <StyledLink to='example' cta={+true}>5-Step</StyledLink>
-            <StyledLink to='services'>Services</StyledLink>
-            <StyledLink to='about'>Who we are</StyledLink>
+            <div>
+                {!isMobile && <StyledLink to='/'>Home</StyledLink> }
+                 {!isMobile &&    <StyledLink to='example' cta={+true}>5-Step</StyledLink> }
+                 {!isMobile &&    <StyledLink to='services'>Services</StyledLink> }
+                 {!isMobile &&    <StyledLink to='about'>Who we are</StyledLink> }
+
+            </div>
             <PhantomLogo
                 src={phantom}
                 alt='phantom-logo'
