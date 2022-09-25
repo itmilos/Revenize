@@ -1,10 +1,8 @@
 import styled from 'styled-components'
-import bg from '../../assets/index_scale_adoption.png'
 import {useState} from "react";
 import AnimatedPage from "../web/AnimatedPage";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
-import plan from "../../assets/plan.png";
 import launch from "../../assets/launch.png";
 import generate from "../../assets/generate.png";
 import grow from "../../assets/grow.png";
@@ -18,6 +16,51 @@ const MobileHomePage = () => {
     return <Container>
     <Header />
     <AnimatedPage>
+        {page ===1 && <BigHeading>5-Step approach to win</BigHeading> }
+        <RightSide>
+            {/*{page ===1  && <ImageContainer*/}
+            {/*    initial={{ x: '100%', opacity: 0 }}*/}
+            {/*    animate={{ x: 0, opacity: 1 }}*/}
+            {/*    exit={{ x: '-100%', opacity: 0 }}*/}
+            {/*    transition={{ duration: .3 }}*/}
+            {/*>*/}
+            {/*    <MainImage src={plan} />*/}
+            {/*</ImageContainer>}*/}
+            {page === 2 && <ImageContainer
+                initial={{ x: '100%', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: '-100%', opacity: 0 }}
+                transition={{ duration: .3 }}
+            >
+                <MainImage src={launch} />
+            </ImageContainer>}
+            {page === 3 && <ImageContainer
+                initial={{ x: '100%', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: '-100%', opacity: 0 }}
+                transition={{ duration: .3 }}
+            >
+                <MainImage src={generate} />
+            </ImageContainer>}
+            {page === 4 && <ImageContainer
+                offset={30}
+                initial={{ x: '100%', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: '-100%', opacity: 0 }}
+                transition={{ duration: .3 }}
+            >
+                <MainImage src={grow} />
+            </ImageContainer>}
+            {page === 5 && <ImageContainer
+                offset={30}
+                initial={{ x: '100%', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: '-100%', opacity: 0 }}
+                transition={{ duration: .3 }}
+            >
+                <MainImage src={optimize} />
+            </ImageContainer>}
+        </RightSide>
         <LeftSide>
             {page === 1 && <Section
                 initial={{ opacity: 0 }}
@@ -101,64 +144,26 @@ const MobileHomePage = () => {
                 {page === 4 && 'Optimize'}
             </Button>}
         </LeftSide>
-        <RightSide>
-            {page ===1  && <ImageContainer
-                initial={{ x: '100%', opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '-100%', opacity: 0 }}
-                transition={{ duration: .3 }}
-            >
-                <MainImage src={plan} />
-            </ImageContainer>}
-            {page === 2 && <ImageContainer
-                initial={{ x: '100%', opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '-100%', opacity: 0 }}
-                transition={{ duration: .3 }}
-            >
-                <MainImage src={launch} />
-            </ImageContainer>}
-            {page === 3 && <ImageContainer
-                initial={{ x: '100%', opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '-100%', opacity: 0 }}
-                transition={{ duration: .3 }}
-            >
-                <MainImage src={generate} />
-            </ImageContainer>}
-            {page === 4 && <ImageContainer
-                offset={30}
-                initial={{ x: '100%', opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '-100%', opacity: 0 }}
-                transition={{ duration: .3 }}
-            >
-                <MainImage src={grow} />
-            </ImageContainer>}
-            {page === 5 && <ImageContainer
-                offset={30}
-                initial={{ x: '100%', opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '-100%', opacity: 0 }}
-                transition={{ duration: .3 }}
-            >
-                <MainImage src={optimize} />
-            </ImageContainer>}
-        </RightSide>
+
+
+
     </AnimatedPage>
     </Container>
 }
+
+const BigHeading = styled.h1 `
+    font-size: 1.1em;
+    margin: 0;
+`
 
 const Container = styled.div``
 
 const LeftSide = styled.div`
     width: 100%;
-    padding-top: 10%;
-    position: absolute;
 `
 
 const RightSide = styled.div`
-    width: 50%;
+    width: 100%;
 `
 
 const Section = styled(motion.div)`
@@ -166,10 +171,8 @@ const Section = styled(motion.div)`
 `
 
 const ImageContainer = styled(motion.div)`
-    width: 19%;
-    position: absolute;
-    top: -10%;
-    left: 37%;
+    width: 28%;
+    margin: 0 auto;
     transform: perspective(500px) rotateY(-25deg);
 `
 

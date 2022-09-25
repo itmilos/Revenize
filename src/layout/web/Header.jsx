@@ -16,16 +16,38 @@ const Header = () => {
                  {!isMobile &&    <StyledLink to='example' cta={+true}>5-Step</StyledLink> }
                  {!isMobile &&    <StyledLink to='services'>Services</StyledLink> }
                  {!isMobile &&    <StyledLink to='about'>Who we are</StyledLink> }
+                 {isMobile &&    <BigHeading to=''>We help brands succeed on Amazon</BigHeading> }
 
+                {isMobile &&    <PhantomLogo
+                    src={phantom}
+                    style={{
+                        top:'8px'
+                    }}
+                    alt='phantom-logo'
+                    onClick={() => window.location.href = 'https://wbd48lfw3wk.typeform.com/to/hAhrwPNb'}
+                /> }
+
+                {!isMobile &&    <PhantomLogo
+                    src={phantom}
+                    alt='phantom-logo'
+                    onClick={() => window.location.href = 'https://wbd48lfw3wk.typeform.com/to/hAhrwPNb'}
+                /> }
             </div>
-            <PhantomLogo
-                src={phantom}
-                alt='phantom-logo'
-                onClick={() => window.location.href = 'https://wbd48lfw3wk.typeform.com/to/hAhrwPNb'}
-            />
+
         </Navigation>
     </StyledHeader>
 }
+
+const BigHeading = styled.a `
+    line-height: 53px;
+    font-size: 0.53em;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg,#ff9900,#b4710b 80%);
+    -webkit-background-clip: text;
+    margin: 0;
+    
+    padding-right: 4%;
+`
 
 const StyledHeader = styled.header`
     width: 100%;

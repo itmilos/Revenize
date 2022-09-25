@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import Header from './Header-old'
+import Header from './web/Header'
 
 const ApplicationLayout = ({ children }) => {
     return <Container>
