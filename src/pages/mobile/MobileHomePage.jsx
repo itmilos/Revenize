@@ -3,13 +3,8 @@ import {useState} from "react";
 import AnimatedPage from "../web/AnimatedPage";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
-import launch from "../../assets/launch.png";
-import generate from "../../assets/generate.png";
-import grow from "../../assets/grow.png";
-import optimize from "../../assets/optimize.png";
 import {motion} from "framer-motion";
 import Header from "../../layout/web/Header";
-import {isMobile} from "react-device-detect";
 
 const MobileHomePage = () => {
     const [page, setPage] = useState(1)
@@ -19,7 +14,6 @@ const MobileHomePage = () => {
     <AnimatedPage>
 
         {page ===1 && <BigHeading2>We help brands succeed on Amazon</BigHeading2> }
-
 
         {page ===1 && <BigHeading>5-Step approach to win</BigHeading> }
         {/*<RightSide>*/}
@@ -176,32 +170,33 @@ const LeftSide = styled.div`
     width: 100%;
 `
 
-const RightSide = styled.div`
-    width: 100%;
-`
 
 const Section = styled(motion.div)`
     width: 100%;
 `
 
-const ImageContainer = styled(motion.div)`
-    width: 28%;
-    margin: 0 auto;
-    transform: perspective(500px) rotateY(-25deg);
-`
-
-const MainImage = styled.img`
-    width: 100%;
-    transform: perspective(500px) rotateY(-25deg);
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow:
-        -2px 0 1px #fff,
-        -2px 0 4px #fff,
-        -10px 0 9px #232f3e,
-        -10px 0 12px #232f3e
-    ;
-`
+// const RightSide = styled.div`
+//     width: 100%;
+// `
+//
+// const ImageContainer = styled(motion.div)`
+//     width: 28%;
+//     margin: 0 auto;
+//     transform: perspective(500px) rotateY(-25deg);
+// `
+//
+// const MainImage = styled.img`
+//     width: 100%;
+//     transform: perspective(500px) rotateY(-25deg);
+//     border-radius: 5px;
+//     padding: 20px;
+//     box-shadow:
+//         -2px 0 1px #fff,
+//         -2px 0 4px #fff,
+//         -10px 0 9px #232f3e,
+//         -10px 0 12px #232f3e
+//     ;
+// `
 
 
 export default MobileHomePage
