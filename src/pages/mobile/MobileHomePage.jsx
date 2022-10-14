@@ -12,54 +12,8 @@ const MobileHomePage = () => {
     return <Container>
     <Header />
     <AnimatedPage>
-
         {page ===1 && <BigHeading2>We help brands succeed on Amazon</BigHeading2> }
-
         {page ===1 && <BigHeading>5-Step approach to win</BigHeading> }
-        {/*<RightSide>*/}
-        {/*    /!*{page ===1  && <ImageContainer*!/*/}
-        {/*    /!*    initial={{ x: '100%', opacity: 0 }}*!/*/}
-        {/*    /!*    animate={{ x: 0, opacity: 1 }}*!/*/}
-        {/*    /!*    exit={{ x: '-100%', opacity: 0 }}*!/*/}
-        {/*    /!*    transition={{ duration: .3 }}*!/*/}
-        {/*    /!*>*!/*/}
-        {/*    /!*    <MainImage src={plan} />*!/*/}
-        {/*    /!*</ImageContainer>}*!/*/}
-        {/*    {page === 2 && <ImageContainer*/}
-        {/*        initial={{ x: '100%', opacity: 0 }}*/}
-        {/*        animate={{ x: 0, opacity: 1 }}*/}
-        {/*        exit={{ x: '-100%', opacity: 0 }}*/}
-        {/*        transition={{ duration: .3 }}*/}
-        {/*    >*/}
-        {/*        <MainImage src={launch} />*/}
-        {/*    </ImageContainer>}*/}
-        {/*    {page === 3 && <ImageContainer*/}
-        {/*        initial={{ x: '100%', opacity: 0 }}*/}
-        {/*        animate={{ x: 0, opacity: 1 }}*/}
-        {/*        exit={{ x: '-100%', opacity: 0 }}*/}
-        {/*        transition={{ duration: .3 }}*/}
-        {/*    >*/}
-        {/*        <MainImage src={generate} />*/}
-        {/*    </ImageContainer>}*/}
-        {/*    {page === 4 && <ImageContainer*/}
-        {/*        offset={30}*/}
-        {/*        initial={{ x: '100%', opacity: 0 }}*/}
-        {/*        animate={{ x: 0, opacity: 1 }}*/}
-        {/*        exit={{ x: '-100%', opacity: 0 }}*/}
-        {/*        transition={{ duration: .3 }}*/}
-        {/*    >*/}
-        {/*        <MainImage src={grow} />*/}
-        {/*    </ImageContainer>}*/}
-        {/*    {page === 5 && <ImageContainer*/}
-        {/*        offset={30}*/}
-        {/*        initial={{ x: '100%', opacity: 0 }}*/}
-        {/*        animate={{ x: 0, opacity: 1 }}*/}
-        {/*        exit={{ x: '-100%', opacity: 0 }}*/}
-        {/*        transition={{ duration: .3 }}*/}
-        {/*    >*/}
-        {/*        <MainImage src={optimize} />*/}
-        {/*    </ImageContainer>}*/}
-        {/*</RightSide>*/}
         <LeftSide>
             {page === 1 && <Section
                 initial={{ opacity: 0 }}
@@ -143,9 +97,6 @@ const MobileHomePage = () => {
                 {page === 4 && 'Optimize'}
             </Button>}
         </LeftSide>
-
-
-
     </AnimatedPage>
     </Container>
 }
@@ -174,29 +125,6 @@ const LeftSide = styled.div`
 const Section = styled(motion.div)`
     width: 100%;
 `
-
-// const RightSide = styled.div`
-//     width: 100%;
-// `
-//
-// const ImageContainer = styled(motion.div)`
-//     width: 28%;
-//     margin: 0 auto;
-//     transform: perspective(500px) rotateY(-25deg);
-// `
-//
-// const MainImage = styled.img`
-//     width: 100%;
-//     transform: perspective(500px) rotateY(-25deg);
-//     border-radius: 5px;
-//     padding: 20px;
-//     box-shadow:
-//         -2px 0 1px #fff,
-//         -2px 0 4px #fff,
-//         -10px 0 9px #232f3e,
-//         -10px 0 12px #232f3e
-//     ;
-// `
 
 
 export default MobileHomePage

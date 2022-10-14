@@ -150,10 +150,4 @@ const Content = styled(motion.div)`
     
 `
 
-
-//
-//     box-shadow: inset 0 0 0 200px rgb(255 255 255 / 5%);
-// filter: blur(10px);
-// border: 1px solid orange;
-
 export default ServicesPage

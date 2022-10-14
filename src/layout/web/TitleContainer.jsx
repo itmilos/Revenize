@@ -42,21 +42,9 @@ const TitleContainer = () => {
                     heading='Where we can help you'
                 description=''
             />
-        // case '/qr':
-        //     return <AnimatedTitle
-        //         titleKey='t/qr'
-        //         heading='QR NFT'
-        //         description='Show the people who are you'
-        //     />
         case '/about':
             return <AnimatedTitle
                 titleKey='t/about'
-                heading='Who are we?'
-                description='Get to know us a bit better'
-            />
-        case '/about2':
-            return <AnimatedTitle
-                titleKey='t/about2'
                 heading='Who are we?'
                 description='Get to know us a bit better'
             />

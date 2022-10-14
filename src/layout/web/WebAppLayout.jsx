@@ -32,7 +32,6 @@ const ComputerHomePage = () => {
         </Main>
         <SolanaLogo src={solana} />
         <BGImage src={bg} />
-        {/*<MovingCircle src={circle} alt='background-circle' />*/}
     </Container>
 }
 
