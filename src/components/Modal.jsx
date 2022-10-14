@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { createPortal } from 'react-dom'
+import {createPortal} from 'react-dom'
 
 const domNode = document.getElementById('app-modal')
 

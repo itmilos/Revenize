@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { useLocation } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import {useLocation} from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 import Heading from '../../components/Heading'
 import Text from '../../components/Text'

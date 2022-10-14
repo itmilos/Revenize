@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components'
-import { AnimatePresence } from 'framer-motion'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import styled, {keyframes} from 'styled-components'
+import {AnimatePresence} from 'framer-motion'
+import {Route, Routes, useLocation} from 'react-router-dom'
 
 import bg from '../../assets/index_scale_adoption.png'
 import solana from '../../assets/s-logo.png'

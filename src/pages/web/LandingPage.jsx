@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import {motion} from 'framer-motion'
 
 import AnimatedPage from './AnimatedPage'
 import Heading from '../../components/Heading'
 import Text from '../../components/Text'
 import AnimatedSection from '../../components/AnimatedSection'
-import Button from "../../components/Button";
 
 const LandingPage = () =>
     <AnimatedPage>

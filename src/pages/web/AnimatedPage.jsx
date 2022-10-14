@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const AnimatedPage = ({ children, withMargin }) =>
     <Content
