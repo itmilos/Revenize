@@ -1,10 +1,7 @@
 import styled, {keyframes} from 'styled-components'
-
 import {Link} from 'react-router-dom'
-
 import phantom from '../../assets/phantom.svg'
 import {isMobile} from "react-device-detect";
-// import MobileHomePage from "../../pages/mobile/MobileHomePage";
 
 const Header = () => {
 
