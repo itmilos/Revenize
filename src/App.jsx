@@ -2,6 +2,7 @@ import {isMobile} from 'react-device-detect'
 
 import MobileHomePage from './pages/mobile/MobileHomePage'
 import WebAppLayout from './layout/web/WebAppLayout'
+import MetaTags from 'react-meta-tags';
 
 function App() {
   if (isMobile) {
@@ -20,10 +21,10 @@ function App() {
     return (
         <div>
           <MetaTags>
-            <title>Page 1</title>
-            <meta name="description" content="Some description." />
-            <meta property="og:title" content="MyApp" />
-            <meta property="og:image" content="path/to/image.jpg" />
+              <title>revenize.co</title>
+              <meta name="description" content="We help brands succeed on Amazon" />
+              <meta property="og:title" content="5 steps" />
+              <meta property="og:image" content="https://link.storjshare.io/juj6zd243wmql4m2by2pea2zonkq/qraft-nft%2Frevenize-meta-picture.png" />
           </MetaTags>
           <WebAppLayout />
         </div>
