@@ -12,7 +12,7 @@ function App() {
             <title>revenize.co</title>
             <meta name="description" content="We help brands succeed on Amazon" />
             <meta property="og:title" content="revenize" />
-            <meta property="og:image" content="https://link.storjshare.io/juj6zd243wmql4m2by2pea2zonkq/qraft-nft%2Frevenize-meta-picture.png" />
+            <meta property="og:image" content="../assets/revenize-meta-picture.png" />
           </MetaTags>
           <MobileHomePage />
         </div>
@@ -24,7 +24,7 @@ function App() {
               <title>revenize.co</title>
               <meta name="description" content="We help brands succeed on Amazon" />
               <meta property="og:title" content="5 steps" />
-              <meta property="og:image" content="https://link.storjshare.io/juj6zd243wmql4m2by2pea2zonkq/qraft-nft%2Frevenize-meta-picture.png" />
+              <meta property="og:image" content="../assets/revenize-meta-picture.png" />
           </MetaTags>
           <WebAppLayout />
         </div>
